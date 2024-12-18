@@ -1,3 +1,3 @@
 print('helloworld!')
 
-print('bezareca')
+print('smereka')

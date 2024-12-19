@@ -3,16 +3,19 @@
 # Substitua números divisíveis por 5 por "Buzz".
 # Substitua números divisíveis por 3 e 5 por "FizzBuzz".
 
-n = int(input('digite o numero: '))
-i = 1
+def fizz_buzz(n):
+    resultado = []
+    for i in  range(1, n + 1):
+        if i % 3 == 0 and i % 5 ==0:
+            resultado.append(('fizzbuzz'))
+        elif i % 5 == 0:
+            resultado.append('buzz')
+        elif i % 3 ==0:
+            resultado.append('fizz')
+        else:
+            resultado.append(i)
+    return resultado
 
-while i <= n:
-    if i % 3 == 0 and i % 5 == 0:
-        print('fizzbuzz')
-    elif i % 5 == 0:
-        print('buzz')
-    elif i % 3 == 0:
-        print('fizz')
-    else:
-        print(i)
-    i=i+1
+n = int(input('Digite um numero: '))
+resultado = fizz_buzz(n)
+print(resultado)

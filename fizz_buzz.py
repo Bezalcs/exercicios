@@ -10,7 +10,7 @@ def fizz_buzz(n):
 #laço para fazer os testes
     for i in  range(1, n + 1):
         if i % 3 == 0 and i % 5 ==0:
-            resultado.append(('fizzbuzz'))
+            resultado.append('fizzbuzz')
         elif i % 5 == 0:
             resultado.append('buzz')
         elif i % 3 ==0:

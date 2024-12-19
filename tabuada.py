@@ -3,7 +3,7 @@
 #definindo a função
 def tabuada(n): 
     lista_inteiros = [1,2,3,4,5,6,7,8,9,10] #lista com valores a serem multiplicados a serem  multiplicados
-    lista_tabuada = [] #lista com o resultado
+    lista_tabuada = [] #lista com o resultad
 
  #loop para calcular a tabuada  
     for  i in lista_inteiros: #percorrer toda a lista

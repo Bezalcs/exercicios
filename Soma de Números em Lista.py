@@ -14,6 +14,6 @@ def soma_lista(numeros):
     return s
 
 #exemplo
-numeros = [1, -2, 4, -7,  8, -10, -11, 13]
+numeros = [1, -2, 4, -7,  8, -10, -11, 13, 14, -15]
 resultado = soma_lista(numeros)
 print(f'A soma dos números positivos é: {resultado}')

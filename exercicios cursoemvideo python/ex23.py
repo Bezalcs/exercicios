@@ -4,8 +4,9 @@
 def verificar_num (n):
     if n > 9999:
         print('O numero digitado é maior que 9999...')
-    elif n == str
-        entrada_dados(n)
+    elif n < 0:
+         print('O número digitado é menor que 0...')
+       
     else:
         unidade = n // 1 % 10
         dezena = n // 10 % 10
@@ -14,11 +15,13 @@ def verificar_num (n):
         print(f'A unidade é: {unidade} a dezena é {dezena} a centena é {centena} e o milhar é {milhar} do numero {n}')
     return
 
-def entrada_dados(n):
-    n = int(input('Digite um numero de 0 a 9999: '))
-    verificar_num(n)
+def entrada_dados():
+    try:
+        n = int(input('Digite um número de 0 a 9999: '))
+        verificar_num(n)
+    except ValueError:
+        print('Entrada inválida! Por favor, insira apenas números inteiros.')
     return
 
-n = int(input('Digite um numero de 0 a 9999: '))
-verificar_num(n)
-    
+
+entrada_dados()

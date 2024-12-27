@@ -20,7 +20,7 @@ def entrada_dados():
         n = int(input('Digite um número de 0 a 9999: '))
         verificar_num(n)
     except ValueError:
-        print('Entrada inválida! Por favor, insira apenas números inteiros.')
+        print('Entrada inválida! Por favor, insira apenas números inteiros positivos.')
     return
 
 
